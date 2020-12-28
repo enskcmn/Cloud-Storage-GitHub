@@ -43,8 +43,7 @@ storageManagement = AGCStorageManagement.getInstance()
 <p><strong>6. Create storage reference whether under your specific folder (i.e. ‘images/’) or without specifying folder name (default: ‘/’). 
 Apply the listAll method of this reference to get all files from storage.</strong></p>
 <pre><div id="copy-button14" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code> //TODO get all the file list from storage area
-
-fun listAllFile(): List<StorageReference> {
+fun listAllFile(): List< StorageReference> {
     var ref = storageManagement.getStorageReference("images/")
     var fileStorageList = ref.listAll()
     return Tasks.await(fileStorageList).fileList
