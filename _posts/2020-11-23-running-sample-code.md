@@ -13,7 +13,7 @@ description: 2
 </ol>
 <img style="width:220px" src="assets/cloud_storage_img_first.jpg" onclick="imageclick(src)"> 
 
-<img style="width:217px" src="assets/cloud_storage_img_second.jpg" onclick="imageclick(src)">
+<img style="width:217px" src="assets/cloud_storage_img_second.png" onclick="imageclick(src)">
 
 <img style="width:217px" src="assets/cloud_storage_img_third.jpg" onclick="imageclick(src)">
 

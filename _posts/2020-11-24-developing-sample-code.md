@@ -43,15 +43,19 @@ storageManagement = AGCStorageManagement.getInstance()
 <p><strong>6. Create storage reference whether under your specific folder (i.e. ‘images/’) or without specifying folder name (default: ‘/’). 
 Apply the listAll method of this reference to get all files from storage.</strong></p>
 <pre><div id="copy-button14" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code> //TODO get all the file list from storage area
+
 fun listAllFile(): List<StorageReference> {
     var ref = storageManagement.getStorageReference("images/")
     var fileStorageList = ref.listAll()
     return Tasks.await(fileStorageList).fileList
 }
+
 <span class="pln">
 </span></code></pre>
+
 <p><strong>7. Create storage reference under specified folder and apply to putFile method of this reference with the exact path of chosen file.</strong></p>
 <pre><div id="copy-button15" class="copy-btn" title="Copy" onclick="copyCode(this.id)"></div><code> //TODO Upload a file from your phone storage
+
   fun uploadFile(uri:String, fileExtension: String, listener: UploadFileViewModel) {
     var ref = storageManagement.storageReference.child(
         "images/" + System.currentTimeMillis()
@@ -66,6 +70,7 @@ fun listAllFile(): List<StorageReference> {
         listener.onFailure(it)
     }
 }
+
 <span class="pln">
 </span></code></pre>
 <p><strong>8. Create storage reference with the file name of selected item to be downloaded. Specify the file path to download the file on mobile phone.</strong></p>
