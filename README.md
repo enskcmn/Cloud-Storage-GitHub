@@ -5,9 +5,9 @@
 
  * [Introduction](#introduction)
  * [Installation](#installation)
- * [Configuration ](#configuration )
+ * [Configuration ](#configuration)
  * [Supported Environments](#supported-environments)
- * [Sample Code](# Sample Code)
+ * [Sample Code](#Sample-Code)
  * [License](#license)
  
  
